@@ -5,6 +5,8 @@
 <c:set var="loginId" value="${loginId != null ? loginId : ''}"/>
 <c:set var="loginOutLink" value="${empty loginId ? '/login' : '/logout'}"/>
 <c:set var="loginOut" value="${empty loginId ? 'Login' : 'Logout'}"/>
+<c:set var="userInfoLink" value="${empty loginId ? '/signup' : '/userInfo'}"/>
+<c:set var="userInfoText" value="${empty loginId ? 'Sign up' : 'My Info'}"/>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -140,7 +142,7 @@
         <li><a href="<c:url value='/index'/>">Home</a></li>
         <li><a href="<c:url value='/board'/>">Board</a></li>
         <li><a href="<c:url value='${loginOutLink}'/>">${loginOut}</a></li>
-        <li><a href="<c:url value='/register/add'/>">Sign in</a></li>
+        <li><a href="<c:url value='${userInfoLink}'/>">\${userInfoText}</a></li>
         <li><a href=""><i class="fa fa-search"></i></a></li>
     </ul>
 </div>

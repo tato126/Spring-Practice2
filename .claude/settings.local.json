@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/chan/workspace/게시판 만들기 모음/practice2/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
